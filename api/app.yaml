@@ -1,0 +1,8 @@
+#app.yaml
+runtime: python37
+
+env_variables:
+  CLOUD_SQL_USERNAME: "sosuri"
+  CLOUD_SQL_PASSWORD: "12345"
+  CLOUD_SQL_DATABASE_NAME: "save_earth"
+  CLOUD_SQL_CONNECTION_NAME: "hackathon-cloud-291419:us-west2:hackerrank"
