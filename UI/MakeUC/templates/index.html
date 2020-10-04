@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/index.css') }}" type = "text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/modal.css') }}" type = "text/css">
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <div style="max-height:8%">
+        <a data-target="#MenuModal" data-toggle="modal" class="modalclass" id="MenuOptions" href="#MenuModal">
+            <img src="Menu.png" style="float:right;margin-right:5%">
+        </a>
+
+        <div style="margin-left:5%; margin-top:1%; max-height:100%;">
+            <img src="/static/Logo.png" class="logo_class">
+        </div>
+    </div>
+
+
+    <div style="width:30%;max-height:30%; margin-top:2%;margin-left:-8%">
+        <img src="/static/together.png" class="together_img" style="width:90%;max-height:100%;margin-left:75%">
+        <img src="/static/disposing.png" class="disposing_img"
+            style="width:90%;max-height:100%;margin-left:75%;margin-top: 4%;">
+    </div>
+
+    <div class="btn_div" style="height:65%">
+        <form action ="/get_items">
+
+
+        <button class="upload_btn">
+            <div id="btn_container">
+                <img src="/static/upload_icon.png" width="17px" height="17px" />
+                <span class="btn-text"> Upload Your Bill Now </span>
+            </div>
+        </button>
+            </form>
+    </div>
+
+    <!-- Modal -->
+    <!-- <div id="MenuModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
+        Right Sidebar Modal
+    </button>
+    </div> -->
+
+    <!-- Modal -->
+
+    <div class="modal right fade" id="MenuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="height:8%;">
+                    <span aria-hidden="true" style="float:left;padding-left:7%;">&times;
+                    </span>
+                </button>
+                <div class="modal-body" style="padding-top:25%;padding-left:30%">
+                    
+                        <p><b>View Nearby Bins</b></p>
+                        <p><b>How it Works</b></p>
+                        <p><b>About Us</b></p>
+                        <p><b>Contact Us</b></p>
+                    
+                </div>
+
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
+</body>
+
+</html>

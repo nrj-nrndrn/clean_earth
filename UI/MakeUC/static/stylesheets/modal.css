@@ -1,0 +1,25 @@
+.modal.fade:not(.in).right .modal-dialog {
+    -webkit-transform: translate3d(25%, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 28%;
+    height: 100%;
+    right: 0px;
+}
+.modal-content {
+    height: 100%;
+    background: #F2FFDD;
+}
+.modal-body p{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    vertical-align: middle;
+    color: #37AC85;
+}

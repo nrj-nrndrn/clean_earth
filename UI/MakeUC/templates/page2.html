@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/modal.css') }}" type = "text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/page2.css') }}" type = "text/css">
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="/static/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="/static/https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <div style="height:100%">
+
+        <div style="max-height:11%;height:10%">
+
+            <a data-target="#MenuModal" data-toggle="modal" class="modalclass" id="MenuOptions" href="#MenuModal">
+                <img src="/static/Menu.png" style="float:right;margin-right:5%;width:2%;height:43%;margin-top:1%;">
+            </a>
+
+            <div style="margin-left:5%; margin-top:1%; max-height:100%;float:left">
+                <img src="/static/Logo.png" class="logo_class">
+            </div>
+
+            <p style="float:left;margin-left:54%;margin-top:1%;"><b>100 EP</b></p>
+            <p style="float:right;margin-right:10%;margin-top:1%;"><b>Disha</b></p>
+
+        </div>
+
+        <div class="background_img" style="height:90%;">
+            <div style="width:50%;float:left;margin-top:2%;margin-left:7%;height:14%;">
+                <img src='/static/great.png' style="display:block;width:37%;height:70%;">
+            </div>
+            <img src='/static/Earth.png' style="-webkit-animation: fade-in 1000ms 0ms ease 1 both;
+        animation: fade-in 1000ms 0ms ease 1 both;float:right;width:30%;height:90%;" />
+
+            <div style="height:95%;display:inline;margin-left: 9%;">
+                <img src="/static/Rectangle 2.png" style="height:58%;width:24%;display:inline-block;margin-right:4%;">
+                <img src="/static/Rectangle 3.png" style="height:58%; width:24%; display:inline-block;">
+
+            </div>
+
+            <div class="buttons" style="height:10%;width:40%;margin-left:17%;">
+                <button  class="btn_style"  value="Save" onclick="myFunction()" style="margin-left:-2%;">
+                    <div id="btn_container1">
+                        <img src="/static/Map.png" />
+                        <span class="btn-text"> View Nearby Bins</span>
+                    </div>
+
+                </button>
+                <button  class="btn_style" type="submit" value="Cancel" onclick="myFunction2()" style="margin-left:22%;">
+                    <div id ="btn_container2">
+                        <img src="/static/ScanBin.png"/>
+                        <span class="btn-text">  Scan QR code </span>
+                    </div>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="modal right fade" id="MenuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="height:8%;">
+                        <span aria-hidden="true" style="float:left;padding-left:7%;">&times;
+                        </span>
+                    </button>
+                    <div class="modal-body" style="padding-top:25%;padding-left:30%">
+                        
+                            <p><b>View Nearby Bins</b></p>
+                            <p><b>How it Works</b></p>
+                            <p><b>About Us</b></p>
+                            <p><b>Contact Us</b></p>
+                        
+                    </div>
+    
+                </div><!-- modal-content -->
+            </div><!-- modal-dialog -->
+        </div><!-- modal -->
+
+
+
+    </div>
+
+</body>
+
+</html>
